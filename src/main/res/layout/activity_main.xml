@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+
+    tools:context="com.grow_with_google.udacity.zodiacmaster.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:textAlignment="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Zodiac_Master"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/zbackground" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/question_1"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/radio1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:gravity="center">
+
+            <RadioButton
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:onClick="radioq1"
+                android:text="Aquarius"
+                android:id="@+id/button1"/>
+
+            <RadioButton
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:onClick="radioq1"
+                android:text="Capricorn"
+                android:id="@+id/button2"/>
+
+            <RadioButton
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:onClick="radioq1"
+                android:text="Sagittarius"
+                android:id="@+id/button3"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/question_2"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="25dp"
+            android:hint="ENTER ANSWER HERE.."
+            android:maxLines="1"
+            android:maxLength="2"
+            android:id="@+id/zodiac_number"
+            android:inputType="textCapCharacters"
+            android:onClick="checkText"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/question_3"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/radio3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/three_button1"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:onClick="radioq3"
+                android:text="Pisces" />
+
+            <RadioButton
+                android:id="@+id/three_button2"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:onClick="radioq3"
+                android:text="Cancer" />
+
+            <RadioButton
+                android:id="@+id/three_button3"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:onClick="radioq3"
+                android:text="Sagittarius" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/question_4"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+
+        <CheckBox
+            android:id="@+id/watersign1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Cancer"
+            android:onClick="elemental"/>
+
+        <CheckBox
+            android:id="@+id/watersign2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Pisces"
+            android:onClick="elemental"/>
+
+        <CheckBox
+            android:id="@+id/watersign3"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Scorpio"
+            android:onClick="elemental"/>
+
+        <CheckBox
+            android:id="@+id/notwatersign"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Aquarius"
+            android:onClick="elemental"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/question_5"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="25dp"
+            android:hint="ENTER ANSWER HERE.."
+            android:maxLines="1"
+            android:maxLength="8"
+            android:id="@+id/water_bearer"
+            android:inputType="textCapCharacters"
+            android:onClick="checkText"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/question_6"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+
+        <CheckBox
+            android:id="@+id/firesign1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Aries"
+            android:onClick="elemental"/>
+
+        <CheckBox
+            android:id="@+id/notfiresign"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Scorpio"
+            android:onClick="elemental"/>
+
+        <CheckBox
+            android:id="@+id/firesign2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Sagittarius"
+            android:onClick="elemental"/>
+
+        <CheckBox
+            android:id="@+id/firesign3"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Leo"
+            android:onClick="elemental"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/question_7"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="25dp"
+            android:hint="ENTER ANSWER HERE."
+            android:maxLines="1"
+            android:maxLength="6"
+            android:id="@+id/the_twins"
+            android:inputType="textCapCharacters"
+            android:onClick="checkText"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/question_8"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/radio8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/eight_button1"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:onClick="radioq8"
+                android:text="Sagittarius" />
+
+            <RadioButton
+                android:id="@+id/eight_button2"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:onClick="radioq8"
+                android:text="Virgo" />
+
+            <RadioButton
+                android:id="@+id/eight_button3"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:onClick="radioq8"
+                android:text="Taurus" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/question_9"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+
+        <CheckBox
+            android:id="@+id/notairsign"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Sagittarius"
+            android:onClick="elemental"/>
+
+        <CheckBox
+            android:id="@+id/airsign1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Gemini"
+            android:onClick="elemental"/>
+
+        <CheckBox
+            android:id="@+id/airsign2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Libra"
+            android:onClick="elemental"/>
+
+        <CheckBox
+            android:id="@+id/airsign3"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Aquarius"
+            android:onClick="elemental"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/question_10"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/earthsign1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Capricorn"
+            android:onClick="elemental"/>
+
+        <CheckBox
+            android:id="@+id/earthsign2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Virgo"
+            android:onClick="elemental"/>
+
+        <CheckBox
+            android:id="@+id/notearthsign"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Aquarius"
+            android:onClick="elemental"/>
+
+        <CheckBox
+            android:id="@+id/earthsign3"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Taurus"
+            android:onClick="elemental"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/question_11"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="25dp"
+            android:hint="ENTER ANSWER HERE."
+            android:maxLines="1"
+            android:maxLength="5"
+            android:id="@+id/the_scale"
+            android:inputType="textCapCharacters"
+            android:onClick="checkText"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/question_12"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/radio12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/twelve_button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:onClick="radioq12"
+                android:text="TRUE" />
+
+            <RadioButton
+                android:id="@+id/twelve_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:onClick="radioq12"
+                android:text="FALSE" />
+
+
+        </RadioGroup>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:onClick="grade"
+            android:text="\nclick here for your score!\n"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</ScrollView>

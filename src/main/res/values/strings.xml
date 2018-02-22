@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ZODIAC MASTER</string>
+    <string name="Zodiac_Master">Are you a Zodiac Master? Scroll through the questions below and answer them to find out.</string>
+    <string name="question_1">Which sign is the 1st sign of the zodiac?</string>
+    <string name="question_2">How many signs of the zodiac are there?</string>
+    <string name="question_3">Which sign is the last sign of the zodiac?</string>
+    <string name="question_4">Name the Zodiac signs that represent the Water element?</string>
+    <string name="question_5">The water bearer is which sign?</string>
+    <string name="question_6">Name the Zodiac signs that represent the Fire element?</string>
+    <string name="question_7">Which sign belongs to \'the twins\'?</string>
+    <string name="question_8">Which sign is half human half animal?</string>
+    <string name="question_9">Name the Zodiac signs that represent the Air element?</string>
+    <string name="question_10">Name the Zodiac signs that represent the Earth element?</string>
+    <string name="question_11">Which Zodiac\'s mascot is represented by an object instead of a living thing?</string>
+    <string name="question_12">Ophiuchus is the hidden 13th sign of the Zodiac?</string>
+</resources>
